@@ -49,7 +49,7 @@ AC_DEFINE_UNQUOTED(BUNDLE_ID_PREFIX, "$BUNDLE_ID_PREFIX", [Prefix to use for bun
 
 AC_ARG_ENABLE(xplugin-dock-support, AS_HELP_STRING([--enable-xplugin-dock-support], [Enable using libXplugin directly for dock support (default: NO)]),
                                     [XPLUGIN_DOCK_SUPPORT="${enableval}"],
-                                    [XPLUGIN_DOCK_SUPPORT="no"])
+                                    [XPLUGIN_DOCK_SUPPORT="yes"])
 AC_SUBST([XPLUGIN_DOCK_SUPPORT])
 if test "x$XPLUGIN_DOCK_SUPPORT" = "xyes"; then
     AC_DEFINE(XPLUGIN_DOCK_SUPPORT, 1, [Use libXplugin directly for dock support])
